@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Lead Bridge</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <h2 class="logo">LEAD BRIDGE</h2>
+    <button id="navToggle" class="nav-toggle">☰</button>
+    <nav id="mainNav" class="nav-collapsed">
+      <a href="home.html">Home</a>
+      <a href="profile.html">Profile</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="help.html">Help</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="index.html" onclick="logoutUser()">Logout</a>
+    </nav>
+  </header>
+
+  <section class="info-section">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you! Reach out to us through the form below or via email.</p>
+
+    <form class="contact-form" onsubmit="event.preventDefault(); contactSubmit();">
+      <input type="text" id="contactName" placeholder="Your Name" required />
+      <input type="email" id="contactEmail" placeholder="Your Email" required />
+      <textarea id="contactMessage" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>📧 support@leadbridge.com | ☎️ +91 99999 88888</p>
+    <p>© 2025 Lead Bridge E-Learning</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | Lead Bridge</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <h2 class="logo">LEAD BRIDGE</h2>
+    <button id="navToggle" class="nav-toggle">☰</button>
+    <nav id="mainNav" class="nav-collapsed">
+      <a href="home.html" class="active">Home</a>
+      <a href="profile.html">Profile</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="help.html">Help</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="index.html" onclick="logoutUser()">Logout</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to <span>Lead Bridge E-Learning</span></h1>
+    <p>Explore and learn programming interactively.</p>
+  </section>
+
+  <section class="courses-section">
+    <div class="courses-grid">
+      <div class="course-card" onclick="goToCourse('java.html')">
+        <img src="images/java.png" alt="Java" />
+        <h3>Java Programming</h3>
+      </div>
+      <div class="course-card" onclick="goToCourse('python.html')">
+        <img src="images/python.png" alt="Python" />
+        <h3>Python Programming</h3>
+      </div>
+      <div class="course-card" onclick="goToCourse('sql.html')">
+        <img src="images/sql.png" alt="SQL" />
+        <h3>SQL Database</h3>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Lead Bridge E-Learning | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

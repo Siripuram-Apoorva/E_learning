@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: linear-gradient(135deg, #001f3f, #0074d9);
+  color: #fff;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px 20px;
+  backdrop-filter: blur(10px);
+}
+.logo {
+  font-size: 1.5em;
+}
+.nav-toggle {
+  display: none;
+  background: none;
+  color: white;
+  font-size: 1.8em;
+  border: none;
+  cursor: pointer;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: 500;
+}
+nav a:hover, nav a.active {
+  color: #ffd700;
+}
+.nav-collapsed {
+  display: flex;
+}
+
+/* ===== Hero ===== */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+.hero span {
+  color: #ffd700;
+}
+
+/* ===== Courses ===== */
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.course-card {
+  background: rgba(255, 255, 255, 0.1);
+  text-align: center;
+  padding: 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.course-card img {
+  width: 100%;
+  max-width: 150px;
+}
+.course-card:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* ===== Auth Boxes ===== */
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.auth-box {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 350px;
+  text-align: center;
+}
+.auth-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+}
+.auth-box button {
+  width: 100%;
+  padding: 10px;
+  background: #ffd700;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ===== Profile ===== */
+.profile-section {
+  padding: 20px;
+  text-align: center;
+}
+.profile-box, .edit-box {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px auto;
+  max-width: 400px;
+}
+.edit-box { display: none; }
+
+/* ===== Feedback ===== */
+.feedback-container {
+  padding: 20px;
+  text-align: center;
+}
+textarea {
+  width: 90%;
+  max-width: 500px;
+  height: 120px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 15px;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .nav-collapsed {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .nav-collapsed.active {
+    display: flex;
+  }
+  .nav-toggle {
+    display: block;
+  }
+}
+/* ===== Info Pages (About, Contact, Help) ===== */
+.info-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+.info-section h2 {
+  color: #ffd700;
+  margin-bottom: 20px;
+}
+.info-section p {
+  max-width: 700px;
+  margin: 10px auto;
+  line-height: 1.6;
+}
+
+/* Contact Form */
+.contact-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 90%;
+  max-width: 400px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+.contact-form button {
+  padding: 10px 20px;
+  border: none;
+  background: #ffd700;
+  color: #000;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* FAQ Section */
+.faq {
+  max-width: 700px;
+  margin: 20px auto;
+  text-align: left;
+}
+.faq h4 {
+  margin-top: 15px;
+  color: #ffd700;
+}
+.faq p {
+  margin-left: 10px;
+}
